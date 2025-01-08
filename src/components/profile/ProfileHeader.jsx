@@ -90,7 +90,7 @@ const ProfileHeader = () => {
 					<div className='relative'>
 						<Avatar className='h-24 w-24 sm:h-32 sm:w-32 rounded-full md:h-[190px] md:w-[190px] absolute sm:top-[-130px] sm:left-[70px] lg:left-[0px] md:left-[0px] lg:top-[-75px] md:top-[-70px]'>
 							<AvatarImage
-								src='/backgrounds-images/profile.png'
+								src='/backgrounds-images/profile.svg'
 								alt='Riaz Ahmed'
 							/>
 							<AvatarFallback>RA</AvatarFallback>
@@ -113,7 +113,7 @@ const ProfileHeader = () => {
 								/>
 							</div>
 						</div>
-						<p className='text-sm md:text-md font-mono break-all mb-2 flex items-center gap-1'>
+						<p className='text-sm md:text-[14px] text-theme-textPrimary font-sans font-bold break-all mb-2 flex items-center gap-1'>
 							0xc4c16a645...b21a
 							<svg
 								xmlns='http://www.w3.org/2000/svg'

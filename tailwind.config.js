@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
 	darkMode: ['class'],
 	content: [
@@ -22,9 +24,11 @@ module.exports = {
 			padding: '2rem',
 		},
 		extend: {
+			gridTemplateColumns: {
+				'7.6-4.4': '7.6fr 4.4fr', // Custom grid template
+			},
 			animation: {
 				marquee: 'marquee 25s linear infinite',
-				// marquee2: 'marquee2 25s linear infinite',
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 			},
@@ -33,10 +37,6 @@ module.exports = {
 					'0%': { transform: 'translateX(100%)' },
 					'100%': { transform: 'translateX(-100%)' },
 				},
-				// marquee2: {
-				// 	'0%': { transform: 'translateX(-100%)' },
-				// 	'100%': { transform: 'translateX(100%)' },
-				// },
 				'accordion-down': {
 					from: { height: '0' },
 					to: { height: 'var(--radix-accordion-content-height)' },
@@ -47,7 +47,7 @@ module.exports = {
 				},
 			},
 			fontFamily: {
-				sans: ['Avenir', 'sans-serif'],
+				sans: ['DM Sans', 'sans-serif'],
 				primary: ['metropolis', 'sans-serif'],
 				secondary: ['roboto', 'sans-serif'],
 			},
@@ -62,6 +62,8 @@ module.exports = {
 					secondary: '#333333',
 					gray: '#F5F5F5',
 					linkColor: '#1877F2',
+					textPrimary: '#23262F',
+					lightGray: '#D3D3D3',
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -96,7 +98,23 @@ module.exports = {
 			boxShadow: {
 				custom: '-1px 5px 13px 5px rgba(231, 227, 227, 0.68)',
 			},
+			textShadow: {
+				custom: '0px 2px 4px rgba(0, 0, 0, 0.3)', // Your custom text shadow
+			},
 		},
 	},
-	plugins: [require('tailwindcss-animate'), require('autoprefixer')],
+	plugins: [
+		require('tailwindcss-animate'),
+		require('autoprefixer'),
+		plugin(function ({ addUtilities, theme }) {
+			addUtilities(
+				{
+					'.text-shadow-custom': {
+						textShadow: theme('textShadow.custom'), // Linking custom text shadow
+					},
+				},
+				['responsive', 'hover']
+			);
+		}),
+	],
 };

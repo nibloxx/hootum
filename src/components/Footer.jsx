@@ -14,18 +14,18 @@ export default function Footer() {
 			<div className=' md:container mx-auto px-12 md:px-6'>
 				<div className='grid grid-cols-1 md:grid-cols-12'>
 					<div className='md:col-span-4 py-6 md:py-16'>
-						<div className='space-y-4'>
+						<div className='space-y-0 md:space-y-4'>
 							<h2 className='text-[36px] font-medium font-dmSans'>
 								Hootum.io
 							</h2>
-							<p className='text-[24px] font-medium text-gray-300'>
+							<p className='text-[23px] md:text-[24px] font-medium text-theme-lightGray'>
 								The New Creative Economy.
 							</p>
 						</div>
 					</div>
 					{/* Web Version */}
-					<div className='md:col-span-8 border-l border-gray-600 py-6 md:py-16 md:block hidden'>
-						<div className='grid grid-cols-8 gap-4 border-b border-gray-600 '>
+					<div className='md:col-span-8 border-l border-theme-lightGray py-6 md:py-16 md:block hidden'>
+						<div className='grid grid-cols-8 gap-4 border-b border-theme-lightGray'>
 							{/* First 4-column section */}
 							<div className='col-span-4 '>
 								<div className='grid grid-cols-2 gap-4'>
@@ -63,19 +63,19 @@ export default function Footer() {
 										<nav className='flex flex-col space-y-3 pl-2 lg:pl-10'>
 											<a
 												href='#'
-												className='text-gray-300 hover:text-white transition-colors text-[14px]'
+												className='text-theme-lightGray hover:text-white transition-colors text-[14px]'
 											>
 												Discover
 											</a>
 											<a
 												href='#'
-												className='text-gray-300 hover:text-white transition-colors text-[14px] pt-3'
+												className='text-theme-lightGray hover:text-white transition-colors text-[14px] pt-3'
 											>
 												Connect wallet
 											</a>
 											<a
 												href='#'
-												className='text-gray-300 hover:text-white transition-colors text-[14px] pt-3'
+												className='text-theme-lightGray hover:text-white transition-colors text-[14px] pt-3'
 											>
 												Create item
 											</a>
@@ -87,19 +87,19 @@ export default function Footer() {
 										<nav className='flex flex-col space-y-3'>
 											<a
 												href='#'
-												className='text-gray-300 hover:text-white transition-colors text-[14px]'
+												className='text-theme-lightGray hover:text-white transition-colors text-[14px]'
 											>
 												Download
 											</a>
 											<a
 												href='#'
-												className='text-gray-300 hover:text-white transition-colors text-[14px] pt-3'
+												className='text-theme-lightGray hover:text-white transition-colors text-[14px] pt-3'
 											>
 												Demos
 											</a>
 											<a
 												href='#'
-												className='text-gray-300 hover:text-white transition-colors text-[14px] pt-3'
+												className='text-theme-lightGray hover:text-white transition-colors text-[14px] pt-3'
 											>
 												Support
 											</a>
@@ -110,7 +110,7 @@ export default function Footer() {
 
 							{/* Second 4-column section */}
 							<div className='col-span-4'>
-								<p className='text-[14px] text-gray-300 mb-4'>
+								<p className='text-[14px] text-theme-lightGray mb-4'>
 									Subscribe to our newsletter to get free
 									design courses and resources.
 								</p>
@@ -135,29 +135,29 @@ export default function Footer() {
 
 					{/* end */}
 					{/* Mobile Version */}
-					<div className='md:col-span-8 border-t border-gray-600  md:hidden  block '>
-						<div className='grid grid-cols-2  border-b border-gray-600 '>
-							<div className='col-span-1 '>
+					<div className='md:col-span-8 border-t border-theme-lightGray  md:hidden  block '>
+						<div className='grid grid-cols-2  border-b border-theme-lightGray'>
+							<div className='col-span-1 py-6'>
 								<div className='py-6  w-fit mx-auto'>
-									<h3 className='text-lg font-semibol mb-4'>
+									<h3 className='text-lg font-semibold mb-4'>
 										Hootum.io
 									</h3>
-									<nav className='flex flex-col space-y-3 '>
+									<nav className='flex flex-col space-y-1 pt-3'>
 										<a
 											href='#'
-											className='text-gray-300 hover:text-white transition-colors'
+											className='text-theme-lightGray hover:text-white transition-colors'
 										>
 											Discover
 										</a>
 										<a
 											href='#'
-											className='text-gray-300 hover:text-white transition-colors'
+											className='text-theme-lightGray hover:text-white transition-colors'
 										>
 											Connect wallet
 										</a>
 										<a
 											href='#'
-											className='text-gray-300 hover:text-white transition-colors'
+											className='text-theme-lightGray hover:text-white transition-colors'
 										>
 											Create item
 										</a>
@@ -165,27 +165,27 @@ export default function Footer() {
 								</div>
 							</div>
 
-							<div className='col-span-1 border-l  border-gray-600 '>
+							<div className='col-span-1 py-6 border-l  border-gray-600 '>
 								<div className='py-6  w-fit mx-auto'>
 									<h3 className='text-lg font-semibold mb-4'>
 										Info
 									</h3>
-									<nav className='flex flex-col space-y-3'>
+									<nav className='flex flex-col space-y-1 pt-3'>
 										<a
 											href='#'
-											className='text-gray-300 hover:text-white transition-colors'
+											className='text-theme-lightGray hover:text-white transition-colors'
 										>
 											Download
 										</a>
 										<a
 											href='#'
-											className='text-gray-300 hover:text-white transition-colors'
+											className='text-theme-lightGray hover:text-white transition-colors'
 										>
 											Demos
 										</a>
 										<a
 											href='#'
-											className='text-gray-300 hover:text-white transition-colors'
+											className='text-theme-lightGray hover:text-white transition-colors'
 										>
 											Support
 										</a>
@@ -199,7 +199,7 @@ export default function Footer() {
 									Join Newsletter
 								</h3>
 
-								<p className='text-sm text-gray-300'>
+								<p className='text-sm text-theme-lightGray'>
 									Subscribe our newsletter to get more free
 									design course and resource
 								</p>
@@ -212,7 +212,7 @@ export default function Footer() {
 									<Button
 										size='icon'
 										variant='ghost'
-										className='text-white rounded-full bg-white absolute right-4 hover:text-gray-300 h-8 w-8'
+										className='text-white rounded-full bg-white absolute right-3 top-1 hover:text-gray-300 h-8 w-8'
 									>
 										<ArrowRight className='h-4 w-4 text-black' />
 									</Button>
@@ -223,7 +223,7 @@ export default function Footer() {
 						{/* end */}
 					</div>
 				</div>
-				<div className='flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 pt-8 border-t border-gray-600'>
+				<div className='flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 pt-8 border-t border-theme-lightGray'>
 					<p className='text-sm text-gray-400'>
 						Copyright © 2023. All rights reserved
 					</p>

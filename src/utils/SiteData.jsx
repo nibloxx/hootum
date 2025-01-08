@@ -145,6 +145,230 @@ const artPieces = [
   },
 ];
 
+const artPiecesViewAll = [
+  {
+    id: 1,
+    title: "Rabindra Oil Painting",
+    price: 39000,
+    image: "/marketplace/rabindra.png",
+    creators: [
+      {
+        name: "MD. Shahabuddin",
+        role: "Artist",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+      {
+        name: "Tarek",
+        role: "Owner",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Amazing Satyajeet Art",
+    price: 40300,
+    image: "/marketplace/amazing.png",
+    creators: [
+      {
+        name: "Jamaluddin shah",
+        role: "Artist",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+      {
+        name: "Jalal khan",
+        role: "Owner",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Digital Art",
+    price: 25000,
+    image: "/marketplace/digital.png",
+    creators: [
+      {
+        name: "Shafiqul ahmed",
+        role: "Artist",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+      {
+        name: "Azir mia",
+        role: "Owner",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Rear Fossil Watch",
+    price: 64500,
+    image: "/marketplace/rear.png",
+    creators: [
+      {
+        name: "Subhash sen",
+        role: "Collector",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+      {
+        name: "Amit saha",
+        role: "Owner",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Canvas Painting",
+    price: 35500,
+    image: "/marketplace/canvas.png",
+    creators: [
+      {
+        name: "Tapan kumar dey",
+        role: "Artist",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+      {
+        name: "Saju",
+        role: "Owner",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "Amazing Painting",
+    price: 93500,
+    image: "/marketplace/amazing-painting.png",
+    creators: [
+      {
+        name: "Rocchu khan",
+        role: "Artist",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+      {
+        name: "Dipoti das",
+        role: "Owner",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+    ],
+  },
+  {
+    id: 7,
+    title: "Beautiful Portrait",
+    price: 39800,
+    image: "/marketplace/beautiful-portrait.png",
+    creators: [
+      {
+        name: "Sudipto datta",
+        role: "Artist",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+      {
+        name: "Tapan talukder",
+        role: "Owner",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+    ],
+  },
+  {
+    id: 8,
+    title: "Rear Antiques",
+    price: 34500,
+    image: "/marketplace/rear-antiques.png",
+    creators: [
+      {
+        name: "Akash ahmed",
+        role: "Collector",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+      {
+        name: "Bimol ghosh",
+        role: "Owner",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+    ],
+  },
+  {
+    id: 9,
+    title: "Nazrul Art (Bid)",
+    price: 34500,
+    image: "/backgrounds-images/Nazul-profile.svg",
+    type:"auth",
+    creators: [
+      {
+        name: "Akash ahmed",
+        role: "Collector",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+      {
+        name: "Bimol ghosh",
+        role: "Owner",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+    ],
+  },
+  {
+    id: 10,
+    title: "Nazrul Art (Not Auth)",
+    price: 34500,
+    image: "/backgrounds-images/Nazul-profile.svg",
+    type:"notAuthenticate",
+    creators: [
+      {
+        name: "Akash ahmed",
+        role: "Collector",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+      {
+        name: "Bimol ghosh",
+        role: "Owner",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+    ],
+  },
+  {
+    id: 11,
+    title: "Nazrul Art (Auth Prog)",
+    price: 34500,
+    image: "/backgrounds-images/Nazul-profile.svg",
+    type:"inProgress",
+    creators: [
+      {
+        name: "Akash ahmed",
+        role: "Collector",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+      {
+        name: "Bimol ghosh",
+        role: "Owner",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+    ],
+  },
+  {
+    id: 12,
+    title: "Nazrul Art (Auth)",
+    price: 34500,
+    image: "/backgrounds-images/Nazul-profile.svg",
+    type:"auth",
+    creators: [
+      {
+        name: "Akash ahmed",
+        role: "Collector",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+      {
+        name: "Bimol ghosh",
+        role: "Owner",
+        avatar: "/placeholder.svg?height=32&width=32",
+      },
+    ],
+  },
+];
+
+
 const heroSlides = [
   {
     id: 1,
@@ -156,7 +380,7 @@ const heroSlides = [
     ),
     description:
       "Experience the perfect blend of physical and digital realms with our unique Phygital NFTs. Unlock exclusive content, tangible assets, and digital ownership like never before.",
-    image: "/hero/welcome.png",
+    image: "/hero/welcome.svg",
     stats: [
       { value: "98k+", label: "Assets" },
       { value: "12k+", label: "Auctions" },
@@ -173,7 +397,7 @@ const heroSlides = [
     ),
     description:
       "Experience the perfect blend of physical and digital realms with our unique Phygital NFTs. Unlock exclusive content, tangible assets, and digital ownership like never before.",
-    image: "/hero/discover.png",
+    image: "/hero/discover.svg",
     stats: [
       { value: "98k+", label: "Artwork" },
       { value: "12k+", label: "Auctions" },
@@ -190,7 +414,7 @@ const heroSlides = [
     ),
     description:
       "Experience the charm of bygone eras with our vast selection of antiques. buy now and bring a piece of history into your home.",
-    image: "/hero/vintage.png",
+    image: "/hero/vintage.svg",
     stats: [
       { value: "78k+", label: "Collectables" },
       { value: "10k+", label: "Auctions" },
@@ -202,12 +426,12 @@ const heroSlides = [
     title: (
       <>
         UNLEASH YOUR INNER
-        <span className="text-[#532410]">{" "}COLLECTOR</span>
+        <span className="text-[#532410]"> COLLECTOR</span>
       </>
     ),
     description:
       "Experience the charm of bygone eras with our vast selection of antiques. buy now and bring a piece of history into your home.",
-    image: "/hero/unleash.png",
+    image: "/hero/unleash.svg",
     stats: [
       { value: "8k+", label: "Watches" },
       { value: "11k+", label: "Auctions" },
@@ -248,13 +472,11 @@ const spotlightProducts = [
   },
 ];
 
-
-
 const popularCategories = [
   {
     id: 1,
     title: "Fine Art",
-    image: "/popular/blank.png",
+    image: "/popular/fine-art.png",
   },
   {
     id: 2,
@@ -264,8 +486,8 @@ const popularCategories = [
   {
     id: 3,
     title: "Watches",
-  
-    image: "/popular/item-card.png",
+
+    image: "/popular/item-card.svg",
   },
   {
     id: 4,
@@ -279,8 +501,6 @@ const popularCategories = [
     image: "/popular/fine-art.png",
   },
 ];
-
-
 
 const slidePosition = {
   active: {
@@ -357,82 +577,90 @@ const slidePosition = {
   },
 };
 
-
-
 const curatorsTestimonials = [
   {
-    image: "/Curators testimonial/Ellipse 13.png",
+    image: "/Curators testimonial/Ellipse 17.svg",
     title: "Azad hossain",
     subtitle: "Artist",
     description:
       "The NFT art marketplace is not just a platform for buying and selling art; it is a thriving community. Artists, collectors, and enthusiasts come together, fostering a sense of collaboration and mutual appreciation. The interactions and connections I've made in this space are invaluable. Engaging with the community through discussions, exhibitions, and collaborations has enriched my perspective and deepened my appreciation for the digital art revolution.",
   },
   {
-    image: "/Curators testimonial/Ellipse 13.png",
+    image: "/testimonial/profile (1).svg",
     title: "John Smith",
     subtitle: "Designer",
     description:
-      "Creating unique digital experiences through innovative design solutions.",
+      "The NFT art marketplace is not just a platform for buying and selling art; it is a thriving community. Artists, collectors, and enthusiasts come together, fostering a sense of collaboration and mutual appreciation. The interactions and connections I've made in this space are invaluable. Engaging with the community through discussions, exhibitions, and collaborations has enriched my perspective and deepened my appreciation for the digital art revolution.",
   },
   {
-    image: "/Curators testimonial/Ellipse 13.png",
+    image: "/testimonial/profile (2).svg",
     title: "Emma Wilson",
     subtitle: "Developer",
     description:
-      "Full-stack developer passionate about building scalable applications.",
+      "The NFT art marketplace is not just a platform for buying and selling art; it is a thriving community. Artists, collectors, and enthusiasts come together, fostering a sense of collaboration and mutual appreciation. The interactions and connections I've made in this space are invaluable. Engaging with the community through discussions, exhibitions, and collaborations has enriched my perspective and deepened my appreciation for the digital art revolution.",
   },
   {
-    image: "/Curators testimonial/Ellipse 13.png",
+    image: "/testimonial/profile (3).svg",
     title: "Michael Brown",
     subtitle: "Product Manager",
     description:
-      "Leading product strategies and driving innovation in digital products.",
+      "The NFT art marketplace is not just a platform for buying and selling art; it is a thriving community. Artists, collectors, and enthusiasts come together, fostering a sense of collaboration and mutual appreciation. The interactions and connections I've made in this space are invaluable. Engaging with the community through discussions, exhibitions, and collaborations has enriched my perspective and deepened my appreciation for the digital art revolution.",
   },
   {
-    image: "/Curators testimonial/Ellipse 13.png",
+    image: "/testimonial/profile (4).svg",
     title: "Sarah Chen",
     subtitle: "UX Researcher",
-    description: "Creating user-centered designs through research and testing.",
+    description:
+      "The NFT art marketplace is not just a platform for buying and selling art; it is a thriving community. Artists, collectors, and enthusiasts come together, fostering a sense of collaboration and mutual appreciation. The interactions and connections I've made in this space are invaluable. Engaging with the community through discussions, exhibitions, and collaborations has enriched my perspective and deepened my appreciation for the digital art revolution.",
   },
   {
-    image: "/Curators testimonial/Ellipse 13.png",
+    image: "/testimonial/profile (5).svg",
     title: "James Wilson",
     subtitle: "Marketing Lead",
     description:
-      "Developing strategic marketing campaigns for digital products.",
+      "The NFT art marketplace is not just a platform for buying and selling art; it is a thriving community. Artists, collectors, and enthusiasts come together, fostering a sense of collaboration and mutual appreciation. The interactions and connections I've made in this space are invaluable. Engaging with the community through discussions, exhibitions, and collaborations has enriched my perspective and deepened my appreciation for the digital art revolution.",
   },
 ];
 
 const testimonials = [
   {
     id: 1,
-    name: 'Sarah Chen',
+    name: "Sarah Chen",
     text: '"As an artist, Shizuka has given me a platform to showcase my work without the traditional barriers of entry. The supportive community and promotional tools have helped me build my brand and gain visibility."',
-    image: "/testimonial/profile (3).png",
+    image: "/testimonial/profile (3).svg",
   },
   {
     id: 2,
-    name: 'David Tom',
+    name: "David Tom",
     text: '"The platform has been instrumental in helping me reach art collectors globally. The tools and community support make it easy to manage my portfolio and conect with buyers."',
-    image: "/testimonial/profile (4).png",
+    image: "/testimonial/profile (4).svg",
   },
   {
     id: 3,
-    name: 'Michael Ross',
+    name: "Michael Ross",
     text: '"I appreciate how the platform makes art accessible to everyone. It\'s transformed how I share and sell my artwork, reaching audiences I never thought possible."',
-    image: "/testimonial/profile (2).png",
+    image: "/testimonial/profile (2).svg",
   },
   {
     id: 4,
-    name: 'James Wilson',
+    name: "James Wilson",
     text: '"The community aspect of the platform is amazing. I\'ve connected with fellow artists and collectors, leading to collaborative opportunities and sales."',
-    image: "/testimonial/profile (1).png",
+    image: "/testimonial/profile (1).svg",
   },
   {
     id: 5,
-    name: 'Emma Davis',
+    name: "Emma Davis",
     text: '"This platform has revolutionized how I present my artwork. The professional tools and global reach have helped me establish myself as a serious artist."',
-    image: "/testimonial/profile (5).png",
-  }
+    image: "/testimonial/profile (5).svg",
+  },
 ];
-export { artPieces, heroSlides, spotlightProducts , popularCategories ,slidePosition,testimonials,curatorsTestimonials};
+export {
+  artPieces,
+  artPiecesViewAll,
+  heroSlides,
+  spotlightProducts,
+  popularCategories,
+  slidePosition,
+  testimonials,
+  curatorsTestimonials,
+};

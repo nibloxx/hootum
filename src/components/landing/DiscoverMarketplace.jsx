@@ -9,10 +9,44 @@ import MarketplaceModal from '../common/MarketplaceModal';
 import { useState } from 'react';
 
 const DiscoverMarketplace = () => {
+		const [open, setOpen] = useState(false); 
+		// Modal visibility state
+		// const [hasTriggered, setHasTriggered] = useState(false); // Track if the modal has been shown
+		// useEffect(() => {
+		// 	const section = document.getElementById('unique-section');
+	
+		// 	if (!section) {
+		// 		console.warn('Section with ID "unique-section" not found.');
+		// 		return;
+		// 	}
+		// 	// Observe section visibility
+		// 	const observer = new IntersectionObserver(
+		// 		entries => {
+		// 			entries.forEach(entry => {
+		// 				if (entry.isIntersecting && !hasTriggered) {
+		// 					setOpen(true); // Show modal when section is visible
+		// 					setHasTriggered(true); // Mark as shown
+		// 				}
+		// 			});
+		// 		},
+		// 		{ threshold: 0.5 } // Trigger when 50% of the section is visible
+		// 	);
+		// 	observer.observe(section);
+	
+		// 	return () => {
+		// 		if (section) observer.unobserve(section); // Cleanup observer on unmount
+		// 	};
+		// }, [hasTriggered]); // Dependency on `hasTriggered`
+	
+		const toggle = state => setOpen(state);
+		// const onAgreed = dontShowAgain => {
+		// 	console.log("Don't show again:", dontShowAgain);
+		// };
+
 	return (
 		<div className=' '>
 			<SectionHeader title='Discover Marketplace' />
-			<div className='md:container my-16'>
+			<div className='md:container my-8 md:my-16'>
 				<FilterSection1 />
 				<FilterSection2 />
 
@@ -33,8 +67,8 @@ const DiscoverMarketplace = () => {
 						<ArtCard key={piece.id} piece={piece} />
 					))}
 				</div>
-				<div className='flex items-center justify-center mt-3'>
-					<button className='px-4 py-3 w-[214px] h-[44px] rounded-[20px] border border-black flex items-center justify-between bg-white'>
+				<div className='flex items-center justify-center mt-3 md:grid'>
+					<button onClick={toggle} className='px-4 py-3 w-[214px] h-[44px] rounded-[20px] border border-black flex items-center justify-between bg-white'>
 						<span>Load more</span>
 						<svg
 							width='14'
@@ -79,6 +113,9 @@ const DiscoverMarketplace = () => {
 					</button>
 				</div>
 			</div>
+			<MarketplaceModal open={open} toggle={toggle}
+			// onAgreed={onAgreed}
+			 />
 		</div>
 	);
 };
