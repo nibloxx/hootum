@@ -78,7 +78,7 @@ const AllCategoriesComp = () => {
 					</h2>
 				</div>
 
-				<div className='border border-black rounded-[5px] p-2 w-full md:w-[320px] md:mr-12'>
+				<div className='border border-black rounded-[5px] p-2 w-full md:w-[320px] '>
 					{/* Search Input */}
 					<div className='flex items-center rounded-lg px-3 py-2'>
 						<input
