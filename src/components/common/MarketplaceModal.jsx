@@ -72,7 +72,7 @@ const MarketplaceModal = ({ open, toggle, onAgreed }) => {
             Do you want to visit marketplace?
           </DialogTitle>
           <DialogDescription className="text-lg text-muted-foreground max-w-xs">
-            Discover the Shizuka Marketplace for Art and Collectibles!
+            Discover the Hootum Marketplace for Art and Collectibles!
           </DialogDescription>
         </DialogHeader>
 
