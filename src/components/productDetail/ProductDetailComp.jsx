@@ -134,7 +134,7 @@ const ProductDetailComp = () => {
 					<CustomButton
 						text='View all'
 						// handleClick={handleClick}
-						className='hidden md:flex items-center justify-center w-[250px] h-[45px] whitespace-nowrap'
+						className='hidden md:flex items-center justify-center md:w-[160px] h-[45px] whitespace-nowrap'
 					/>
 				</div>
 				<CarouselLayout className='my-16'>
