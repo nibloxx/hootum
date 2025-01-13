@@ -11,6 +11,7 @@ import { spotlightProducts } from '@/utils/SiteData';
 import Image from 'next/image';
 import { useRouter, useSearchParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
+import Gallery from './Gallery';
 
 const ProductDetailComp = () => {
 	const router = useRouter(); // Initialize the Next.js router
@@ -36,18 +37,9 @@ const ProductDetailComp = () => {
 	const handleGoBack = () => {
 		router.back(); // Navigate to the previous page
 	};
-	const images = [
-		'/backgrounds-images/Orginal.png', // Replace these with actual image paths in your public folder
-		'/backgrounds-images/Nazul1.png',
-		'/backgrounds-images/Nazul2.png',
-		'/backgrounds-images/Nazul3.png',
-	];
-	const [selectedImage, setSelectedImage] = useState(0);
 
-	// Handle thumbnail click
-	const handleThumbnailClick = index => {
-		setSelectedImage(index);
-	};
+
+
 
 	return (
 		<div className='md:container mx-auto p-4 md:p-6'>
@@ -79,49 +71,9 @@ const ProductDetailComp = () => {
 				{/* Left Section */}
 				<div className='col-span-12 md:col-span-12 lg:col-span-1 flex flex-col gap-6 md:gap-4'>
 					{/* Thumbnails and Main Image */}
-					<div className='flex flex-col md:flex-row gap-4'>
-						{/* Thumbnails */}
-						<div className='flex flex-row md:flex-col justify-around items-center md:px-4 gap-4 order-2 md:order-1 md:py-2'>
-							{images.map((image, index) => (
-								<div
-									key={index}
-									className={`${
-										selectedImage === index
-											? 'border border-[#0000004D] p-2 rounded-md'
-											: 'p-3'
-									}`} // Highlight active thumbnail
-								>
-									<Image
-										src={image}
-										alt={`Thumbnail ${index + 1}`}
-										onClick={() =>
-											handleThumbnailClick(index)
-										}
-										className='cursor-pointer object-cover w-[50px] h-[50px] md:w-[80px] md:h-[75px]'
-										width={80}
-										height={75}
-									/>
-								</div>
-							))}
-						</div>
-
-						{/* Main Image */}
-						<div className='flex-grow flex items-center order-1 md:order-2'>
-							<div className='relative'>
-								<Image
-									src={images[selectedImage]}
-									alt='Main Art'
-									className={`border rounded-lg w-[395px] md:w-[550px] h-auto ${
-										isBidding
-											? 'md:h-[525px]'
-											: 'md:h-[480px]'
-									}`}
-									width={550}
-									height={isBidding ? 525 : 480}
-								/>
-							</div>
-						</div>
-					</div>
+					<Gallery 
+						isBidding={isBidding}
+					/>
 				</div>
 
 				{/* Right Section */}
