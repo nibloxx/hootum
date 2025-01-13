@@ -1,22 +1,21 @@
-
 "use client";
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 const HeadLine = () => {
   const text = " VIEW COLLECTIONS - CREATE WALLET - ";
-  // Duplicate the text multiple times to ensure smooth looping
   const repeatedText = `${text} ${text} ${text} ${text} ${text} ${text}`;
 
   return (
-    <div className="relative w-full overflow-hidden border-y border-black  py-4">
-      <div className="flex w-full">
-        <div className="marquee-scroll flex whitespace-nowrap min-w-full">
-          <span className="mx-4  text-md">{repeatedText}</span>
-        </div>
-        <div className="marquee-scroll flex whitespace-nowrap min-w-full">
+    <div className="relative w-full overflow-hidden border-y border-black py-4">
+      {/* Container for marquee */}
+
+      <Marquee>
+        {" "}
+        <div className="flex whitespace-nowrap">
           <span className="mx-4 text-md">{repeatedText}</span>
         </div>
-      </div>
+      </Marquee>
     </div>
   );
 };
